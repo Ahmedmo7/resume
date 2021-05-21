@@ -38,7 +38,7 @@ function App() {
     </Jumbotron>
 
     {/** Contact Details */}
-    <Container fluid="md">
+    <Container >
       <h2>Contact Details</h2>
       <br></br>
       <Row>
@@ -74,7 +74,8 @@ function App() {
       <br></br>
     </Container>
    
-    <Container fluid="md">
+    <Container >
+      <br></br>
     <h2>Skills</h2>
     <br></br>
     <Row>
