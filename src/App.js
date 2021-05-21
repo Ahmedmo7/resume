@@ -74,6 +74,7 @@ function App() {
       <br></br>
     </Container>
    
+   {/**Skills Section */}
     <Container >
       <br></br>
     <h2>Skills</h2>
