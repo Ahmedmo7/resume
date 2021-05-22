@@ -1,11 +1,12 @@
 import './App.css';
 import * as React from "react";
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Typed from "react-typed";
 
 function App() {
   return (
@@ -17,21 +18,13 @@ function App() {
       <Container fluid>
       <Row>
         <Col>
-        <h1>Ahmed Mohamed</h1>
+        <Typed
+            strings={['<h3>Ahmed Mohamed</h3>']}
+            typeSpeed={40}
+            />
         <h6>
       4th Year Computer Science Student
         </h6>
-        </Col>
-        <Col>
-        <p>Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. 
-          Feugiat in fermentum posuere urna 
-          nec tincidunt. Mi sit amet mauris 
-          commodo quis imperdiet. Condimentum 
-          mattis pellentesque id nibh tortor.
-          </p>
         </Col>
       </Row>
       </Container>
@@ -82,15 +75,68 @@ function App() {
     <Row>
       <Col>
       <h5>Programming Languages</h5>
+        Python, Java, JavaScript, C, SQL, R ,HTML/CSS
       </Col>
       <Col>
       <h5>Development Tools and Libraries</h5>
+      Django, Flask, React.js, Flutter, MSFT Power Platform
       </Col>
       <Col>
       <h5>Software Tools</h5>
+      Git, Unix, Linux, Jira, Confluence, Bootstrap, Azure
       </Col>
     </Row>
+    <br></br>
     </Container>
+
+
+    <Container>
+      <br></br>
+      <h2>Projects</h2>
+      <br></br>
+      <Row>
+        <Col>
+        <Card style={{width: '18rem'}}>
+          <Card.Img variant="top" src="public/logo192.png" />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+           Some quick example text to build on the card title and make up the bulk of
+          the card's content.
+              </Card.Text>
+          </Card.Body>
+        </Card>
+        </Col>
+        <Col>
+        <Card style={{width: '18rem'}}>
+          <Card.Img variant="top" src="public/logo192.png" />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+           Some quick example text to build on the card title and make up the bulk of
+          the card's content.
+              </Card.Text>
+          </Card.Body>
+        </Card>
+        </Col>
+        <Col>
+        <Card style={{width: '18rem'}}>
+          <Card.Img variant="top" src="public/logo192.png" />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+           Some quick example text to build on the card title and make up the bulk of
+          the card's content.
+              </Card.Text>
+          </Card.Body>
+        </Card>
+        </Col>
+      </Row>
+
+
+
+    </Container>
+
 
 
     </div>
