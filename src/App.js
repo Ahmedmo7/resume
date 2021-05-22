@@ -7,8 +7,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Typed from "react-typed";
+import profile from './profile.png';
+import {Fullpage,Slide,HorizontalSlider} from 'fullpage-react';
+
+
 
 function App() {
+
+
   return (
     //Convert each of the labeled blocks into components as needed
     <div className="App">
@@ -20,13 +26,22 @@ function App() {
         <Col>
         <Typed
             strings={['<h3>Ahmed Mohamed</h3>']}
-            typeSpeed={40}
+            typeSpeed={50}
+            showCursor = {false}
             />
-        <h6>
-      4th Year Computer Science Student
-        </h6>
-        </Col>
+            </Col>
       </Row>
+      <Row>
+      <Col>
+            <Typed
+            strings={['<h5>4th year Computer Science Student </h5>']}
+            typeSpeed={80}
+            startDelay ={30}
+            showCursor = {false}
+            />
+            </Col>
+      </Row>
+
       </Container>
     </Jumbotron>
 
@@ -60,9 +75,10 @@ function App() {
         </svg>
         <br></br>
         <br></br>
-        <a href="https://gtihub.com/Ahmedmo7" target="0"><h5>GitHub</h5></a>
+        <a href="https://github.com/Ahmedmo7" target="0"><h5>GitHub</h5></a>
         </Col>
       </Row>
+      
       
       <br></br>
     </Container>
@@ -90,14 +106,63 @@ function App() {
     </Container>
 
 
+
+    {/** Experience*/}
     <Container>
+
+      <h2>Projects</h2>
+        <br></br>
+        <Row>
+          <Col md={{ span: 3, offset: 3}}>
+            <Card style={{ width: '15rem' }}>
+              <Card.Img variant="top" src={profile} />
+              <Card.Body>
+                <Card.Title>COVID</Card.Title>
+                <Card.Text>
+               Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+        </Col>
+        </Row>
+<br></br>
+<br></br>
+<br></br>
+
+        <Row>
+        <Col md={{ span: 6, offset: 6 }}>
+            <Card style={{ width: '15rem' }}>
+              <Card.Img variant="top" src={profile} />
+              <Card.Body>
+                <Card.Title>COVID</Card.Title>
+                <Card.Text>
+               Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+        </Col>
+        </Row>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+
+    </Container>
+
+
+    {/* <Container>
       <br></br>
       <h2>Projects</h2>
       <br></br>
       <Row>
         <Col>
         <Card style={{width: '18rem'}}>
-          <Card.Img variant="top" src="public/logo192.png" />
+          <Card.Img variant="top" src={"profile.png"} />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
               <Card.Text>
@@ -107,9 +172,10 @@ function App() {
           </Card.Body>
         </Card>
         </Col>
+
         <Col>
         <Card style={{width: '18rem'}}>
-          <Card.Img variant="top" src="public/logo192.png" />
+          <Card.Img variant="top" src="profile.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
               <Card.Text>
@@ -119,23 +185,13 @@ function App() {
           </Card.Body>
         </Card>
         </Col>
-        <Col>
-        <Card style={{width: '18rem'}}>
-          <Card.Img variant="top" src="public/logo192.png" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-           Some quick example text to build on the card title and make up the bulk of
-          the card's content.
-              </Card.Text>
-          </Card.Body>
-        </Card>
-        </Col>
+
       </Row>
 
+    </Container> 
+    */}
 
 
-    </Container>
 
 
 
