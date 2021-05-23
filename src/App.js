@@ -21,7 +21,7 @@ function App() {
     //Convert each of the labeled blocks into components as needed
     <div className="App"
     style={{
-      // background:"linear-gradient(90deg, rgba(179,136,136,0.8631827731092436) 5%, rgba(237,227,208,0.6895133053221288) 50%, rgba(179,136,136,1) 95%)",
+     background:"linear-gradient(87deg, #172b4d 0,  #0062cc 100%)",
     }}
     >
 
@@ -58,7 +58,7 @@ function App() {
 
     {/** Contact Details */}
     <Container >
-    <h2>Contact Details</h2>
+    <h2 style={{color: "white"}}>Contact Details</h2>
       <br></br>
       <Row>
         <Col>
@@ -115,7 +115,7 @@ function App() {
     </Container>
    
 <Container>
-  <h2>Education</h2>
+  <h2 style={{color: "white"}}>Education</h2>
   <br></br>
   <Animated animationIn="slideInLeft" animationOut="fadeOutUp" animationInDuration={6000} animationOutDuration={800} isVisible={true}>
         <Row>
@@ -134,7 +134,7 @@ function App() {
          <p>May 2018 - June 2022</p>
          </Card.Header>
               <Card.Body>
-                <Card.Title>Major in Computer Science</Card.Title>
+                <Card.Title>BSc Major in Computer Science</Card.Title>
                   <Card.Text>
                   President of Computer Science Undergraduate Society, Junior Varsity Volleyball, Western AI Project Team Member, Intramural Sports
                    </Card.Text>
@@ -148,8 +148,8 @@ function App() {
 
     {/** Experience*/}
     <Container>
-
-      <h2>Experience</h2>
+    <br></br>
+      <h2 style={{color: "white"}}>Experience</h2>
       <br></br>
         <br></br>       
         <Animated animationIn="bounceInLeft" animationOut="fadeOutUp" animationInDuration={11000} animationOutDuration={800} isVisible={true}>
