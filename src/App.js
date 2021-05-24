@@ -1,6 +1,5 @@
 import './App.css';
 import * as React from "react";
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/container';
 import Row from 'react-bootstrap/Row';
@@ -13,7 +12,7 @@ import cura from './cura.png';
 import uwo from './uwo.png'
 import Figure from 'react-bootstrap/esm/Figure';
 import { Animated } from 'react-animated-css';
-
+import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
 
@@ -24,18 +23,24 @@ function App() {
         background: "linear-gradient(87deg, #172b4d 0,  #0062cc 100%)",
       }}
     >
-
       <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
       </head>
 
+      <Navbar expand="lg" variant="light" bg="light" >
+        <Container>
+          <Navbar.Brand href="#"><h2>AM</h2></Navbar.Brand>
+        </Container>
+      </Navbar>
+
+      <br></br>
+
       {/** Introduction */}
-      <Jumbotron>
         <Container fluid>
           <Row>
             <Col>
               <Typed
-                strings={['<h3>Ahmed Mohamed</h3>']}
+                strings={['<h3 style = color:white>Ahmed Mohamed</h3>']}
                 typeSpeed={60}
                 showCursor={false}
               />
@@ -44,7 +49,7 @@ function App() {
           <Row>
             <Col>
               <Typed
-                strings={['<h5>4th year Computer Science Student </h5>']}
+                strings={['<h5 style = color:white>4th year Computer Science Student </h5>']}
                 typeSpeed={50}
                 startDelay={30}
                 showCursor={false}
@@ -54,7 +59,6 @@ function App() {
 
         </Container>
         <br></br>
-      </Jumbotron>
 
       {/** Contact Details */}
       <Container >
@@ -159,7 +163,7 @@ function App() {
         <br></br>
         <Animated animationIn="bounceInLeft" animationOut="fadeOutUp" animationInDuration={11000} animationOutDuration={800} isVisible={true}>
           <Row>
-            <Col md={{ span: 7, offset: -5 }}>
+            <Col>
               <Card>
                 <Card.Header>
                   <Figure>
@@ -187,14 +191,8 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
-        </Animated>
-        <br></br>
-
-        <Animated animationIn="bounceInRight" animationOut="fadeOutUp" animationInDuration={13000} animationOutDuration={800} isVisible={true}>
-          <Row>
-            <Col md={{ span: 7, offset: 5 }}>
-              <Card>
+            <Col>
+            <Card>
                 <Card.Header>
                   <Figure>
                     <Figure.Image
@@ -228,10 +226,10 @@ function App() {
         </Animated>
         <br></br>
 
-        <Animated animationIn="bounceInLeft" animationOut="fadeOutUp" animationInDuration={15000} animationOutDuration={800} isVisible={true}>
+        <Animated animationIn="bounceInRight" animationOut="fadeOutUp" animationInDuration={13000} animationOutDuration={800} isVisible={true}>
           <Row>
-            <Col md={{ span: 7, offset: -5 }}>
-              <Card>
+            <Col>
+            <Card>
                 <Card.Header>
                   <Figure>
                     <Figure.Image
@@ -257,15 +255,11 @@ function App() {
                    </Card.Text>
                 </Card.Body>
               </Card>
+            
+            
             </Col>
-          </Row>
-          <br></br>
-        </Animated>
-        <Animated animationIn="bounceInRight" animationOut="fadeOutUp" animationInDuration={17000} animationOutDuration={800} isVisible={true}>
-
-          <Row>
-            <Col md={{ span: 7, offset: 5 }}>
-              <Card>
+            <Col>
+            <Card>
                 <Card.Header>
                   <Figure>
                     <Figure.Image
@@ -294,12 +288,8 @@ function App() {
             </Col>
           </Row>
         </Animated>
+        <br></br>
 
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
 
       </Container>
 
@@ -317,9 +307,9 @@ function App() {
               <Card.Body>
                 <Card.Title>
                   <a href='https://github.com/Ahmedmo7/dermago' target="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                  </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
                   </a>
                 </Card.Title>
                 <Card.Text>
@@ -338,10 +328,10 @@ function App() {
               </Card.Header>
               <Card.Body>
                 <Card.Title>
-                <a href='https://github.com/niampattni/covid' target ="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                  </svg>
+                  <a href='https://github.com/niampattni/covid' target="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
                   </a>
                 </Card.Title>
                 <Card.Text>
