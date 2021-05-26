@@ -12,7 +12,6 @@ import cura from './cura.png';
 import uwo from './uwo.png'
 import Figure from 'react-bootstrap/esm/Figure';
 import { Animated } from 'react-animated-css';
-import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
 
@@ -26,12 +25,6 @@ function App() {
       <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
       </head>
-
-      <Navbar expand="lg" variant="light" bg="light" >
-        <Container>
-          <Navbar.Brand href="#"><h2>AM</h2></Navbar.Brand>
-        </Container>
-      </Navbar>
 
       <br></br>
 
@@ -65,8 +58,6 @@ function App() {
         <h2 style={{ color: "white" }}>Contact Details</h2>
         <br></br>
         <Card>
-          <br></br>
-          <br></br>
           <br></br>
           <Row>
             <Col>
@@ -345,6 +336,11 @@ function App() {
         </Row>
         <br></br>
       </Container>
+
+      {/** Skills Section */}
+
+
+      
 
     </div>
 
